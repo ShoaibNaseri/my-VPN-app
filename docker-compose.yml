@@ -1,0 +1,36 @@
+services:
+  vpn-backend:
+    build: ./backend
+    ports:
+      - "5001:5000"
+    container_name: vpn-backend
+    restart: unless-stopped
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    volumes:
+      - /dev/net/tun:/dev/net/tun
+      - ./backend/configs:/app/configs
+    environment:
+      - NODE_ENV=production
+    networks:
+      - vpn-network
+
+  myvpn-app:
+    build: .
+    ports:
+      - "3000:80"
+    container_name: myvpn-app
+    restart: unless-stopped
+    depends_on:
+      - vpn-backend
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_API_URL=http://vpn-backend:5000
+    networks:
+      - vpn-network
+
+networks:
+  vpn-network:
+    driver: bridge
