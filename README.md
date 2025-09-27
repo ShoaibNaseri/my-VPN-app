@@ -2,6 +2,8 @@
 
 A beautiful, responsive VPN application built with React, Vite, Node.js, and Docker. Features real-time connection status, country selection, and a modern UI with WebSocket communication.
 
+**Developed by:** Shoaib Naseri - Head of Technology at DIGIPALZ
+
 ![VPN App](https://img.shields.io/badge/React-18.2.0-blue)
 ![Vite](https://img.shields.io/badge/Vite-4.5.14-646CFF)
 ![Node.js](https://img.shields.io/badge/Node.js-18.0.0-green)
@@ -39,6 +41,7 @@ A beautiful, responsive VPN application built with React, Vite, Node.js, and Doc
 **Live Demo:** [Visit the application](http://localhost:3000) (after running locally)
 
 ### ✨ Features Showcase
+
 - 🎨 **Modern UI** - Beautiful gradient design with smooth animations
 - 🌍 **12 Countries** - Select from US, UK, Germany, Japan, Canada, Australia, France, Singapore, Netherlands, Switzerland, Sweden, Norway
 - ⚡ **Real-time Updates** - WebSocket-powered connection status
@@ -267,7 +270,12 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Support
 
-For issues and questions, please open an issue in the repository or contact the development team.
+For issues and questions, please open an issue in the repository or contact:
+
+**Shoaib Naseri**  
+Head of Technology at DIGIPALZ  
+📧 Email: [shoaib.hasib10@gmail.com](mailto:shoaib.hasib10@gmail.com)  
+🐙 GitHub: [@ShoaibNaseri](https://github.com/ShoaibNaseri)
 
 ---
 
